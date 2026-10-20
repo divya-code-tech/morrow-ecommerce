@@ -269,7 +269,7 @@ The following results have been reported from manual browser testing.
 | Mobile responsiveness at 375 px | PASS |
 | Tablet responsiveness at 768 px | PASS |
 | Production build using `npm run build` | PASS |
-| Production preview | CHECKED |
+| Production preview | PASS |
 
 These results are based on manual testing and the reported outcomes of the application.
 
