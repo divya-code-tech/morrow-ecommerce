@@ -2,13 +2,21 @@
 
 **Considered goods for everyday.**
 
-MORROW+ is a modern, responsive e-commerce website designed and developed by **Divya** using React and Vite. It features a curated product catalogue, interactive product pages, shopping cart management, wishlist functionality, promotional discounts, and light and dark themes.
+MORROW+ is a modern, responsive e-commerce website designed and developed by **Divya** using React and Vite. It provides an intuitive online shopping experience with a curated product catalogue, product detail pages, shopping cart management, wishlist functionality, promotional discounts, and light and dark themes.
+
+## Live Demo
+
+**Explore the website:** [MORROW+ — Live Website](https://morrow-ecommerce.vercel.app/)
+
+**GitHub Repository:** [divya-code-tech/morrow-ecommerce](https://github.com/divya-code-tech/morrow-ecommerce)
 
 ---
 
 ## Homepage Preview
 
 ![MORROW+ Homepage](screenshots/01-homepage.png)
+
+*The homepage screenshot is stored at `screenshots/01-homepage.png` in the repository.*
 
 ---
 
@@ -31,24 +39,30 @@ MORROW+ is a modern, responsive e-commerce website designed and developed by **D
 
 ## Overview
 
-MORROW+ is a frontend e-commerce website built to provide a clean, intuitive, and responsive online shopping experience.
+MORROW+ is a frontend e-commerce application focused on clean visual design, responsive layouts, and interactive shopping functionality.
 
-The website allows users to explore products, search and filter the catalogue, view individual product details, manage a shopping cart, save favourites to a wishlist, and apply promotional discounts.
+Users can browse products, search the catalogue, apply category filters, sort products by price, view product details, manage a shopping cart, save favourite products, and apply promotional discounts.
 
-The product catalogue contains **17 demo products** across five categories: Tech, Wear, Home, Carry, and Desk.
+The catalogue contains **17 demo products** across five categories:
 
-The project combines a modern user interface with interactive features and browser-side state persistence.
+- Tech
+- Wear
+- Home
+- Carry
+- Desk
+
+The application uses React for its component-based interface and Redux Toolkit for application state management. It also provides browser-side persistence for supported features.
 
 ## Features
 
 ### 1. Homepage and Product Catalogue
 
-- Modern MORROW+ homepage with a hero banner.
+- MORROW+ branded homepage with a hero banner.
 - Product cards featuring images, prices, ratings, and product information.
-- Product search.
+- Search functionality.
 - Category-based filtering.
 - Price sorting from low to high.
-- Pagination for browsing products.
+- Pagination for browsing the product catalogue.
 
 ### 2. Product Details
 
@@ -64,7 +78,7 @@ The project combines a modern user interface with interactive features and brows
 ### 3. Shopping Cart
 
 - Add products to the cart.
-- Increase and decrease quantities.
+- Increase and decrease product quantities.
 - Remove individual products or clear the cart.
 - Automatic subtotal and order total calculations.
 - Shipping cost and free-shipping eligibility display.
@@ -73,10 +87,10 @@ The project combines a modern user interface with interactive features and brows
 
 ### 4. Promotional Discounts
 
-The shopping cart supports the demo coupon code `MORROW10`.
+The cart supports the demo coupon code `MORROW10`.
 
 - Applies a 10% discount to the cart subtotal.
-- Displays the discount and updated total.
+- Displays the discount and recalculated total.
 - Preserves the applied coupon across browser refreshes.
 - Supports coupon removal and preserves the removal after refresh.
 
@@ -114,6 +128,8 @@ The shopping cart supports the demo coupon code `MORROW10`.
 | CSS | Styling and responsive layouts |
 | JavaScript | Application logic |
 | localStorage | Browser-side persistence for supported application state |
+| Git and GitHub | Version control and source-code hosting |
+| Vercel | Website deployment and hosting |
 
 ---
 
@@ -124,6 +140,10 @@ The following is a simplified overview of the project structure.
 ```text
 MORROW/
 ├── public/
+├── screenshots/
+│   ├── 01-homepage.png
+│   ├── 02-shop-catalogue.png
+│   └── ...
 ├── src/
 │   ├── app/
 │   ├── components/
@@ -140,10 +160,10 @@ MORROW/
 │   ├── services/
 │   │   └── productService.js
 │   └── ...
-├── screenshots/
-│   └── 01-homepage.png
 ├── index.html
 ├── package.json
+├── package-lock.json
+├── vite.config.js
 └── README.md
 ```
 
@@ -155,40 +175,45 @@ MORROW/
 
 ### Prerequisites
 
-Make sure the following are installed:
+Install the following:
 
 - [Node.js](https://nodejs.org/)
 - npm
 - Visual Studio Code or another code editor
 - A modern web browser
 
-### 1. Install Dependencies
+### 1. Clone the Repository
 
-Open a terminal in the project root directory and run:
+```bash
+git clone https://github.com/divya-code-tech/morrow-ecommerce.git
+cd morrow-ecommerce
+```
+
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Start the Development Server
+### 3. Start the Development Server
 
 ```bash
 npm run dev
 ```
 
-Open the local URL displayed in your terminal. With the default Vite configuration, it is usually:
+Open the local URL displayed in the terminal. With the default Vite configuration, it is usually:
 
 ```text
 http://localhost:5173/
 ```
 
-### 3. Create a Production Build
+### 4. Create a Production Build
 
 ```bash
 npm run build
 ```
 
-### 4. Preview the Production Build
+### 5. Preview the Production Build
 
 ```bash
 npm run preview
@@ -200,11 +225,9 @@ Open the preview URL displayed in the terminal.
 
 ## Demo Coupon
 
-Use the following coupon code on the shopping cart page:
+Use this code on the shopping cart page:
 
-```text
-MORROW10
-```
+`MORROW10`
 
 The coupon applies a 10% discount to the cart subtotal.
 
@@ -219,7 +242,7 @@ The coupon applies a 10% discount to the cart subtotal.
 
 This example assumes the order qualifies for free shipping under the application's shipping rules.
 
-**Note:** Checkout is a demonstration flow. No real payments are collected.
+**Note:** MORROW+ uses a demonstration checkout flow. No real payments are collected.
 
 ---
 
@@ -254,7 +277,7 @@ These results are based on manual testing and the reported outcomes of the appli
 
 ## Screenshots
 
-The project includes a set of 12 screenshots demonstrating its interface and main functionality:
+Twelve screenshots have been captured to demonstrate the interface and key functionality:
 
 1. Homepage
 2. Shop catalogue
@@ -269,32 +292,30 @@ The project includes a set of 12 screenshots demonstrating its interface and mai
 11. Empty cart
 12. Tablet view
 
-The screenshots are maintained in the project evidence document.
+The screenshots are available in the repository's `screenshots` directory and the accompanying project evidence document.
 
-The homepage screenshot is displayed at the beginning of this README using the relative path:
+The homepage screenshot is embedded at the beginning of this README. To display correctly on GitHub, the image must exist at:
 
 ```text
 screenshots/01-homepage.png
 ```
-
-Make sure this image exists at that location in the repository for it to display correctly.
 
 ---
 
 ## Known Limitations
 
 - Each product currently has one default colour. Multiple selectable colour variants are not configured unless explicitly defined in the product data.
-- Product catalogue data is supplied by the local product data service.
+- Product catalogue information is supplied by the local product data service.
 - Checkout is a demonstration flow and does not process real payments.
 - Cart, coupon, wishlist, and theme persistence use browser-side storage rather than account-based cloud synchronisation.
-- The project focuses on frontend functionality and is not a complete production-ready e-commerce platform.
+- The application focuses on frontend functionality and is not a complete production-ready e-commerce platform.
 
 ## Future Improvements
 
 Potential enhancements include:
 
 - Multiple product colour variants with corresponding images.
-- Preserving the selected product variant in the shopping cart.
+- Preserving selected product variants in the shopping cart.
 - User authentication and account management.
 - Backend integration for products and orders.
 - Server-side coupon validation.
@@ -309,12 +330,16 @@ Potential enhancements include:
 
 Designed and developed by Divya.
 
+- **GitHub:** [divya-code-tech](https://github.com/divya-code-tech)
+- **Project Repository:** [morrow-ecommerce](https://github.com/divya-code-tech/morrow-ecommerce)
+- **Live Website:** [morrow-ecommerce.vercel.app](https://morrow-ecommerce.vercel.app/)
+
 ---
 
 ## Conclusion
 
-MORROW+ brings together modern interface design and essential e-commerce functionality in a responsive web application. It demonstrates product discovery, cart management, promotional discounts, wishlist functionality, browser-side persistence, theme switching, and responsive layouts.
+MORROW+ combines modern interface design with essential e-commerce functionality in a responsive web application. It demonstrates product discovery, shopping cart management, promotional discounts, wishlist functionality, browser-side persistence, theme switching, and responsive layouts.
 
-The project has been manually tested against its principal shopping workflows, checked at mobile and tablet viewport widths, and successfully compiled for production.
+The project has been manually tested against its main shopping workflows, checked at mobile and tablet viewport widths, and successfully compiled for production.
 
 **MORROW+ — Considered goods for everyday.**
